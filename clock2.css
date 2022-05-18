@@ -1,0 +1,77 @@
+body{
+margin:0px;
+
+}
+
+.container{
+text-align:center;
+position:relative;
+top:100px;
+}
+
+.clock{
+background:url('sky2.jpg');
+width:800px;
+height:400px;
+margin:5px auto;
+border:2px solid black;
+border-radius:10px;
+animation:sky 30s infinite alternate;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+}
+
+@keyframes sky{
+from{background-position:0%}
+to{background-position:100%}
+}
+
+.time{
+font-size:100px;
+
+}
+
+.time2{
+display:none;
+font-size:50px;
+color:white;
+}
+
+.change{
+margin-left:10px;
+}
+
+.left{
+position:absolute;
+left:50%;
+top:40px;
+width:10px;
+height:150px;
+border:1px solid black;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+animation:left 1s infinite alternate;
+}
+@keyframes left{
+from{transform:rotate(-60deg)}
+to{transform:rotate(-20deg)}
+}
+
+.right{
+position:absolute;
+left:50%;
+top:40px;
+width:10px;
+height:150px;
+border:1px solid black;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+animation: right 1s infinite alternate;
+}
+
+@keyframes right{
+from{transform:rotate(60deg)}
+to{transform:rotate(20deg)}
+}
